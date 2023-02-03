@@ -1,5 +1,5 @@
 # MidTerm_Project
-Repository for the Mid-term Ironhack Data Analytics course project.
+Repository for the Mid-term Ironhack Data Analytics' course project.
 
 ## Members of the group
 Érica D'Alessandro Junho de Lemos and Miguel Bayer.
