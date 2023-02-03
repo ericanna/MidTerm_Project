@@ -1,4 +1,4 @@
-# MidTerm_Project
+# Mid-Term Project
 Repository for the Mid-term Ironhack Data Analytics' course project.
 
 ## Members of the group
