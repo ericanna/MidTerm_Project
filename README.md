@@ -31,4 +31,13 @@ The dataset we're going to explore was build by a Kaggle user (Benjamin Vanous) 
 - Checking for duplicates;
 - Correcting typos;
 - Handling missing values.
-#### Day 2: 
+#### Day 2: Exploring the data
+- Looking for patterns;
+- Deciding which dimensions to use;
+- Insights about the data;
+- Finding the story behind the data.
+#### Day 3: Plotting
+- Plotting graphics using Tableau.
+#### Day 4: Presentation
+- Working of the visuals for the presentation;
+- Storytelling.
