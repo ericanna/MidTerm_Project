@@ -38,6 +38,9 @@ The dataset we're going to explore was build by a Kaggle user (Benjamin Vanous) 
 - Finding the story behind the data.
 #### Day 3: Plotting
 - Plotting graphics using Tableau.
-#### Day 4: Presentation
+#### Day 4: Visuals and Storytelling.
 - Working of the visuals for the presentation;
-- Storytelling.
+- Setting the storytelling.
+#### Day 5: Presentation
+- Final adjustments;
+- Class presentation and Q&A.
