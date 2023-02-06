@@ -6,7 +6,7 @@ Repository for the Mid-term Ironhack Data Analytics' course project.
 
 ## Goal of the project
 It's a BI project about CO2 emission across the world (from 1980 until 2020) and how they could be related to each countries population, different energy types and GDP.
-*The energy transition is based on the idea that the world's economy can keep growing as it has been growing until now, but using low carbon energy sources instead. With these visualizations we want to show the correlation between CO2 emissions and the GDP growth, population, energy intensity and energy sources across countries.
+
 
 ## Brief description of the dataset
 The dataset we're going to explore was build by a Kaggle user (Benjamin Vanous) using data produced by the US Energy Information Administration. It has 55440 rows and 10 features:
