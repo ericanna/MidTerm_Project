@@ -295,26 +295,6 @@
               <bucket>&quot;[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[sum:Energy_production:qk]&quot;</bucket>
             </map>
           </encoding>
-          <encoding attr='color' field='[none:Energy_type:nk]' type='palette'>
-            <map to='#4e79a7'>
-              <bucket>&quot;all_energy_types&quot;</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>&quot;petroleum_n_other_liquids&quot;</bucket>
-            </map>
-            <map to='#76b7b2'>
-              <bucket>&quot;nuclear&quot;</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>&quot;natural_gas&quot;</bucket>
-            </map>
-            <map to='#edc948'>
-              <bucket>&quot;renewables_n_other&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;coal&quot;</bucket>
-            </map>
-          </encoding>
           <encoding attr='color' field='[none:Region:nk]' type='palette'>
             <map to='#4e79a7'>
               <bucket>&quot;Africa&quot;</bucket>
@@ -946,6 +926,26 @@
               <bucket>&quot;Turkey&quot;</bucket>
             </map>
           </encoding>
+          <encoding attr='color' field='[none:Energy_type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;all_energy_types&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;petroleum_n_other_liquids&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;nuclear&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;natural_gas&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;renewables_n_other&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;coal&quot;</bucket>
+            </map>
+          </encoding>
         </style-rule>
       </style>
       <semantic-values>
@@ -1518,7 +1518,7 @@
       </viewpoint>
       <simple-id uuid='{6F3C1735-6DD1-459B-815B-EA3526CB9C49}' />
     </window>
-    <window class='worksheet' name='Energy production per energy type'>
+    <window class='worksheet' maximized='true' name='Energy production per energy type'>
       <cards>
         <edge name='left'>
           <strip size='174'>
@@ -1788,7 +1788,7 @@
       </viewpoint>
       <simple-id uuid='{0353DF80-0414-48A7-A5FE-08B6F8068261}' />
     </window>
-    <window class='worksheet' maximized='true' name='CO2 emission/energy type'>
+    <window class='worksheet' name='CO2 emission/energy type'>
       <cards>
         <edge name='left'>
           <strip size='160'>
