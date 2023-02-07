@@ -1094,12 +1094,17 @@
             <column-instance column='[CO2_emission]' derivation='Sum' name='[sum:CO2_emission:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[none:Country:nk]'>
-            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
-              <groupfilter function='level-members' level='[none:Country:nk]' />
-              <groupfilter function='union'>
-                <groupfilter function='member' level='[none:Country:nk]' member='&quot;World&quot;' />
-                <groupfilter function='member' level='[none:Country:nk]' member='%null%' />
-              </groupfilter>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;China&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;France&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Germany&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;India&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Italy&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Japan&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Russia&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;United Arab Emirates&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;United States&quot;' />
             </groupfilter>
           </filter>
           <filter class='categorical' column='[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[none:Year:ok]'>
@@ -1690,7 +1695,7 @@
       </cards>
       <simple-id uuid='{D2A92961-D36D-43D3-B236-10B4D86656D2}' />
     </window>
-    <window class='worksheet' name='CO2 emissions/Country'>
+    <window class='worksheet' maximized='true' name='CO2 emissions/Country'>
       <cards>
         <edge name='left'>
           <strip size='200'>
@@ -1726,7 +1731,7 @@
       </viewpoint>
       <simple-id uuid='{0353DF80-0414-48A7-A5FE-08B6F8068261}' />
     </window>
-    <window class='worksheet' maximized='true' name='CO2 emission/energy type'>
+    <window class='worksheet' name='CO2 emission/energy type'>
       <cards>
         <edge name='left'>
           <strip size='200'>
