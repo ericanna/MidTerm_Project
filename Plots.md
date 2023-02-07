@@ -5,5 +5,5 @@
 - CO2 emissions per energy source
 - CO2 emissions and energy intensity (gdp)
 - CO2 emissions per regions for all years - **Done**
-- CO2 emissions per energy type (which one is worse for the environment)
+- CO2 emissions per energy type (which one is worse for the environment) - **Done**
 - CO2 emissions per population for all years - **Done**
