@@ -1140,6 +1140,69 @@
       </table>
       <simple-id uuid='{EB0DF92E-F8D2-4597-B292-A6FEBBCA833D}' />
     </worksheet>
+    <worksheet name='CO2 emissions/Regions'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (df3)' name='federated.0n2qrqi0xm4lmh10hysyr0wj1hwx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n2qrqi0xm4lmh10hysyr0wj1hwx'>
+            <column caption='CO2 emission' datatype='real' name='[CO2_emission]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[CO2_emission]' derivation='Sum' name='[sum:CO2_emission:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[none:Country:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;China&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;France&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Germany&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;India&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Italy&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Japan&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Russia&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;United Arab Emirates&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;United States&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[none:Year:ok]'>
+            <groupfilter from='1993' function='range' level='[none:Year:ok]' to='2019' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[none:Region:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[sum:CO2_emission:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[none:Year:ok]</column>
+            <column>[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[none:Country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[none:Country:nk]' />
+              <lod column='[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[none:Country:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[sum:CO2_emission:qk]</rows>
+        <cols>[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[none:Region:nk]</cols>
+        <pages>
+          <column>[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[none:Year:ok]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{66EED484-8D2D-4FB1-B173-DF2C32DC1CE6}' />
+    </worksheet>
     <worksheet name='Consumption per country'>
       <table>
         <view>
@@ -1149,14 +1212,15 @@
           <datasource-dependencies datasource='federated.0n2qrqi0xm4lmh10hysyr0wj1hwx'>
             <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
             <column caption='Energy consumption' datatype='real' name='[Energy_consumption]' role='measure' type='quantitative' />
+            <column caption='Energy production' datatype='real' name='[Energy_production]' role='measure' type='quantitative' />
             <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
             <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
             <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Energy_consumption]' derivation='Sum' name='[sum:Energy_consumption:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Energy_production]' derivation='Sum' name='[sum:Energy_production:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[none:Country:nk]'>
             <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
-              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Brazil&quot;' />
               <groupfilter function='member' level='[none:Country:nk]' member='&quot;China&quot;' />
               <groupfilter function='member' level='[none:Country:nk]' member='&quot;France&quot;' />
               <groupfilter function='member' level='[none:Country:nk]' member='&quot;Germany&quot;' />
@@ -1189,8 +1253,28 @@
               <lod column='[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[none:Country:nk]' />
             </encodings>
           </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[sum:Energy_consumption:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[none:Country:nk]' />
+              <lod column='[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[none:Country:nk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[sum:Energy_production:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[none:Country:nk]' />
+              <lod column='[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[none:Country:nk]' />
+            </encodings>
+          </pane>
         </panes>
-        <rows>[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[sum:Energy_consumption:qk]</rows>
+        <rows>([federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[sum:Energy_consumption:qk] + [federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[sum:Energy_production:qk])</rows>
         <cols>[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[none:Year:qk]</cols>
       </table>
       <simple-id uuid='{46566CBA-A548-4BBD-83BF-D000F6F8A235}' />
@@ -1291,6 +1375,10 @@
           <aggregation value='false' />
         </view>
         <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[Longitude (generated)]' field-type='quantitative' max='27850360.958831072' min='-13038340.893611016' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[Latitude (generated)]' field-type='quantitative' max='14557660.213948265' min='-10521643.354585439' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
           <style-rule element='mark'>
             <encoding attr='color' field='[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[sum:GDP:qk]' palette='red_green_white_diverging_10_0' type='interpolated' />
           </style-rule>
@@ -1510,7 +1598,7 @@
       <viewpoint>
         <current-page>
           <multibucket>
-            <bucket>2019</bucket>
+            <bucket>2007</bucket>
           </multibucket>
         </current-page>
       </viewpoint>
@@ -1553,7 +1641,7 @@
       </viewpoint>
       <simple-id uuid='{4AFE2931-ADAE-41AD-BE1B-5222FEEA274D}' />
     </window>
-    <window class='worksheet' name='Renewable per region'>
+    <window class='worksheet' maximized='true' name='Renewable per region'>
       <cards>
         <edge name='left'>
           <strip size='200'>
@@ -1638,7 +1726,7 @@
         </edge>
         <edge name='right'>
           <strip size='218'>
-            <card pane-specification-id='0' param='[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[none:Country:nk]' type='color' />
+            <card pane-specification-id='1' param='[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[none:Country:nk]' type='color' />
           </strip>
         </edge>
       </cards>
@@ -1654,13 +1742,13 @@
           </strip>
         </edge>
         <edge name='top'>
-          <strip size='2147483647'>
+          <strip size='38'>
             <card type='columns' />
           </strip>
-          <strip size='2147483647'>
+          <strip size='38'>
             <card type='rows' />
           </strip>
-          <strip size='2147483647'>
+          <strip size='38'>
             <card type='title' />
           </strip>
         </edge>
@@ -1682,20 +1770,20 @@
           </strip>
         </edge>
         <edge name='top'>
-          <strip size='2147483647'>
+          <strip size='38'>
             <card type='columns' />
           </strip>
-          <strip size='2147483647'>
+          <strip size='38'>
             <card type='rows' />
           </strip>
-          <strip size='2147483647'>
+          <strip size='38'>
             <card type='title' />
           </strip>
         </edge>
       </cards>
       <simple-id uuid='{D2A92961-D36D-43D3-B236-10B4D86656D2}' />
     </window>
-    <window class='worksheet' maximized='true' name='CO2 emissions/Country'>
+    <window class='worksheet' name='CO2 emissions/Country'>
       <cards>
         <edge name='left'>
           <strip size='200'>
@@ -1730,6 +1818,42 @@
         </current-page>
       </viewpoint>
       <simple-id uuid='{0353DF80-0414-48A7-A5FE-08B6F8068261}' />
+    </window>
+    <window class='worksheet' name='CO2 emissions/Regions'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='218'>
+            <card pane-specification-id='0' param='[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[none:Country:nk]' type='color' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>1993</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{11142978-06C4-4724-AFA3-A95CD90A13E1}' />
     </window>
     <window class='worksheet' name='CO2 emission/energy type'>
       <cards>
