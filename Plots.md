@@ -27,7 +27,7 @@ Storytelling:
 
 1) How CO2 is responsible for the incrising temperatures on earth (text) and how the different energy sources colaborate to CO2 liberation (CO2 emissions per type plot)
 2) How, despite that, and despite the fact that some regions seem to have controlled their CO2 emissions, CO2 emisisons is still growing worldwide, specially due to the increase in Asia emissions (CO2 by regions per years plot - we can use the map or the lines, or both)
-3) Show that CO2 emissions are growing more then the global population (CO2 emissions per population per years plot)
+3) Show that CO2 emissions are growing more than the global population (CO2 emissions per population per years plot)
 4) How CO2 emissions and GDP are intensily related (Erica's correlation plot for regions)
 5) And how GDP increased in those years in all countries (map plot)
 6) The Co2 emissions for the most important/biggest countries, pointing that developed countries Co2 emissions have been more stable, while other countries (China and India) have increased the emissions while they have been developing
