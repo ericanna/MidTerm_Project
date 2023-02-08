@@ -11,6 +11,7 @@
     <MapboxVectorStylesAndLayers />
     <_.fcp.MarkAnimation.true...MarkAnimation />
     <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
     <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
     <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
     <SetMembershipControl />
@@ -30,338 +31,6 @@
     </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
   </_.fcp.AnimationOnByDefault.false...style>
   <datasources>
-    <datasource caption='df3' inline='true' name='federated.0n3ulb40p3648b1377er81ikzali' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='df3' name='textscan.1l9v41b1xarror142rrob0lud6yx'>
-            <connection class='textscan' directory='/Users/ericaNNa/Documents/GitHub/MidTerm_Project' filename='df3.csv' password='' server='' />
-          </named-connection>
-        </named-connections>
-        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1l9v41b1xarror142rrob0lud6yx' name='df3.csv' table='[df3#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='en' separator=','>
-            <column datatype='integer' name='F1' ordinal='0' />
-            <column datatype='string' name='Country' ordinal='1' />
-            <column datatype='string' name='Energy_type' ordinal='2' />
-            <column datatype='integer' name='Year' ordinal='3' />
-            <column datatype='real' name='Energy_consumption' ordinal='4' />
-            <column datatype='real' name='Energy_production' ordinal='5' />
-            <column datatype='real' name='GDP' ordinal='6' />
-            <column datatype='real' name='Population' ordinal='7' />
-            <column datatype='real' name='Energy_intensity_per_capita' ordinal='8' />
-            <column datatype='real' name='Energy_intensity_by_GDP' ordinal='9' />
-            <column datatype='real' name='CO2_emission' ordinal='10' />
-            <column datatype='string' name='Region' ordinal='11' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1l9v41b1xarror142rrob0lud6yx' name='df3.csv' table='[df3#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='en' separator=','>
-            <column datatype='integer' name='F1' ordinal='0' />
-            <column datatype='string' name='Country' ordinal='1' />
-            <column datatype='string' name='Energy_type' ordinal='2' />
-            <column datatype='integer' name='Year' ordinal='3' />
-            <column datatype='real' name='Energy_consumption' ordinal='4' />
-            <column datatype='real' name='Energy_production' ordinal='5' />
-            <column datatype='real' name='GDP' ordinal='6' />
-            <column datatype='real' name='Population' ordinal='7' />
-            <column datatype='real' name='Energy_intensity_per_capita' ordinal='8' />
-            <column datatype='real' name='Energy_intensity_by_GDP' ordinal='9' />
-            <column datatype='real' name='CO2_emission' ordinal='10' />
-            <column datatype='string' name='Region' ordinal='11' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
-        <metadata-records>
-          <metadata-record class='capability'>
-            <remote-name />
-            <remote-type>0</remote-type>
-            <parent-name>[df3.csv]</parent-name>
-            <remote-alias />
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
-              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
-              <attribute datatype='string' name='currency'>&quot;¤&quot;</attribute>
-              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
-              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
-              <attribute datatype='string' name='locale'>&quot;en&quot;</attribute>
-              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>F1</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[F1]</local-name>
-            <parent-name>[df3.csv]</parent-name>
-            <remote-alias>F1</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Country</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[Country]</local-name>
-            <parent-name>[df3.csv]</parent-name>
-            <remote-alias>Country</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RGB' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Energy_type</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[Energy_type]</local-name>
-            <parent-name>[df3.csv]</parent-name>
-            <remote-alias>Energy_type</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RGB' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Year</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Year]</local-name>
-            <parent-name>[df3.csv]</parent-name>
-            <remote-alias>Year</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Energy_consumption</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[Energy_consumption]</local-name>
-            <parent-name>[df3.csv]</parent-name>
-            <remote-alias>Energy_consumption</remote-alias>
-            <ordinal>4</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Energy_production</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[Energy_production]</local-name>
-            <parent-name>[df3.csv]</parent-name>
-            <remote-alias>Energy_production</remote-alias>
-            <ordinal>5</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>GDP</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[GDP]</local-name>
-            <parent-name>[df3.csv]</parent-name>
-            <remote-alias>GDP</remote-alias>
-            <ordinal>6</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Population</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[Population]</local-name>
-            <parent-name>[df3.csv]</parent-name>
-            <remote-alias>Population</remote-alias>
-            <ordinal>7</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Energy_intensity_per_capita</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[Energy_intensity_per_capita]</local-name>
-            <parent-name>[df3.csv]</parent-name>
-            <remote-alias>Energy_intensity_per_capita</remote-alias>
-            <ordinal>8</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Energy_intensity_by_GDP</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[Energy_intensity_by_GDP]</local-name>
-            <parent-name>[df3.csv]</parent-name>
-            <remote-alias>Energy_intensity_by_GDP</remote-alias>
-            <ordinal>9</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>CO2_emission</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[CO2_emission]</local-name>
-            <parent-name>[df3.csv]</parent-name>
-            <remote-alias>CO2_emission</remote-alias>
-            <ordinal>10</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Region</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[Region]</local-name>
-            <parent-name>[df3.csv]</parent-name>
-            <remote-alias>Region</remote-alias>
-            <ordinal>11</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RGB' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column caption='CO2 emission' datatype='real' name='[CO2_emission]' role='measure' type='quantitative' />
-      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
-      <column caption='Energy consumption' datatype='real' name='[Energy_consumption]' role='measure' type='quantitative' />
-      <column caption='Energy intensity by GDP' datatype='real' name='[Energy_intensity_by_GDP]' role='measure' type='quantitative' />
-      <column caption='Energy intensity per capita' datatype='real' name='[Energy_intensity_per_capita]' role='measure' type='quantitative' />
-      <column caption='Energy production' datatype='real' name='[Energy_production]' role='measure' type='quantitative' />
-      <column caption='Energy type' datatype='string' name='[Energy_type]' role='dimension' type='nominal'>
-        <aliases>
-          <alias key='&quot;coal&quot;' value='Coal' />
-          <alias key='&quot;natural_gas&quot;' value='Natural gas' />
-          <alias key='&quot;nuclear&quot;' value='Nuclear' />
-          <alias key='&quot;petroleum_n_other_liquids&quot;' value='Petroleum' />
-          <alias key='&quot;renewables_n_other&quot;' value='Renewables' />
-        </aliases>
-      </column>
-      <column datatype='real' name='[Population]' role='measure' type='quantitative' />
-      <column datatype='string' name='[Region]' role='dimension' type='nominal'>
-        <aliases>
-          <alias key='&quot;Arab contries&quot;' value='Arab countries' />
-          <alias key='&quot;Canada, USA and territories&quot;' value='Canada + USA' />
-        </aliases>
-      </column>
-      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
-      <_.fcp.ObjectModelTableType.true...column caption='df3.csv' datatype='table' name='[__tableau_internal_object_id__].[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]' role='measure' type='quantitative' />
-      <column-instance column='[Energy_type]' derivation='None' name='[none:Energy_type:nk]' pivot='key' type='nominal' />
-      <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
-      <column-instance column='[CO2_emission]' derivation='Sum' name='[sum:CO2_emission:qk]' pivot='key' type='quantitative' />
-      <column-instance column='[Population]' derivation='Sum' name='[sum:Population:qk]' pivot='key' type='quantitative' />
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
-      <style>
-        <style-rule element='mark'>
-          <encoding attr='color' field='[:Measure Names]' type='palette'>
-            <map to='#4e79a7'>
-              <bucket>&quot;[federated.0n3ulb40p3648b1377er81ikzali].[sum:CO2_emission:qk]&quot;</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>&quot;[federated.0n3ulb40p3648b1377er81ikzali].[sum:Population:qk]&quot;</bucket>
-            </map>
-          </encoding>
-          <encoding attr='color' field='[none:Region:nk]' type='palette'>
-            <map to='#4e79a7'>
-              <bucket>&quot;Africa&quot;</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>&quot;Eastern Europe&quot;</bucket>
-            </map>
-            <map to='#76b7b2'>
-              <bucket>&quot;Canada, USA and territories&quot;</bucket>
-            </map>
-            <map to='#9c755f'>
-              <bucket>&quot;World&quot;</bucket>
-            </map>
-            <map to='#b07aa1'>
-              <bucket>&quot;Oceania&quot;</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>&quot;Asia&quot;</bucket>
-            </map>
-            <map to='#edc948'>
-              <bucket>&quot;Latin America&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;Arab contries&quot;</bucket>
-            </map>
-            <map to='#ff9da7'>
-              <bucket>&quot;Western Europe&quot;</bucket>
-            </map>
-          </encoding>
-          <encoding attr='color' field='[none:Energy_type:nk]' type='palette'>
-            <map to='#4e79a7'>
-              <bucket>&quot;all_energy_types&quot;</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>&quot;coal&quot;</bucket>
-            </map>
-            <map to='#76b7b2'>
-              <bucket>&quot;petroleum_n_other_liquids&quot;</bucket>
-            </map>
-            <map to='#9c755f'>
-              <bucket>&quot;nuclear&quot;</bucket>
-            </map>
-            <map to='#edc948'>
-              <bucket>&quot;natural_gas&quot;</bucket>
-            </map>
-            <map to='#ff9da7'>
-              <bucket>&quot;renewables_n_other&quot;</bucket>
-            </map>
-          </encoding>
-        </style-rule>
-      </style>
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
-      </semantic-values>
-      <date-options start-of-week='monday' />
-      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-        <objects>
-          <object caption='df3.csv' id='df3.csv_8FA3405494F0403A91BF165EDD05C9A5'>
-            <properties context=''>
-              <relation connection='textscan.1l9v41b1xarror142rrob0lud6yx' name='df3.csv' table='[df3#csv]' type='table'>
-                <columns character-set='UTF-8' header='yes' locale='en' separator=','>
-                  <column datatype='integer' name='F1' ordinal='0' />
-                  <column datatype='string' name='Country' ordinal='1' />
-                  <column datatype='string' name='Energy_type' ordinal='2' />
-                  <column datatype='integer' name='Year' ordinal='3' />
-                  <column datatype='real' name='Energy_consumption' ordinal='4' />
-                  <column datatype='real' name='Energy_production' ordinal='5' />
-                  <column datatype='real' name='GDP' ordinal='6' />
-                  <column datatype='real' name='Population' ordinal='7' />
-                  <column datatype='real' name='Energy_intensity_per_capita' ordinal='8' />
-                  <column datatype='real' name='Energy_intensity_by_GDP' ordinal='9' />
-                  <column datatype='real' name='CO2_emission' ordinal='10' />
-                  <column datatype='string' name='Region' ordinal='11' />
-                </columns>
-              </relation>
-            </properties>
-          </object>
-        </objects>
-      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-    </datasource>
     <datasource caption='Sheet1 (df3)' inline='true' name='federated.0n2qrqi0xm4lmh10hysyr0wj1hwx' version='18.1'>
       <connection class='federated'>
         <named-connections>
@@ -8297,6 +7966,524 @@
         </objects>
       </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
     </datasource>
+    <datasource caption='df3' inline='true' name='federated.0n3ulb40p3648b1377er81ikzali' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='df3' name='textscan.1l9v41b1xarror142rrob0lud6yx'>
+            <connection class='textscan' directory='/Users/ericaNNa/Documents/GitHub/MidTerm_Project' filename='df3.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1l9v41b1xarror142rrob0lud6yx' name='df3.csv' table='[df3#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Country' ordinal='1' />
+            <column datatype='string' name='Energy_type' ordinal='2' />
+            <column datatype='integer' name='Year' ordinal='3' />
+            <column datatype='real' name='Energy_consumption' ordinal='4' />
+            <column datatype='real' name='Energy_production' ordinal='5' />
+            <column datatype='real' name='GDP' ordinal='6' />
+            <column datatype='real' name='Population' ordinal='7' />
+            <column datatype='real' name='Energy_intensity_per_capita' ordinal='8' />
+            <column datatype='real' name='Energy_intensity_by_GDP' ordinal='9' />
+            <column datatype='real' name='CO2_emission' ordinal='10' />
+            <column datatype='string' name='Region' ordinal='11' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1l9v41b1xarror142rrob0lud6yx' name='df3.csv' table='[df3#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Country' ordinal='1' />
+            <column datatype='string' name='Energy_type' ordinal='2' />
+            <column datatype='integer' name='Year' ordinal='3' />
+            <column datatype='real' name='Energy_consumption' ordinal='4' />
+            <column datatype='real' name='Energy_production' ordinal='5' />
+            <column datatype='real' name='GDP' ordinal='6' />
+            <column datatype='real' name='Population' ordinal='7' />
+            <column datatype='real' name='Energy_intensity_per_capita' ordinal='8' />
+            <column datatype='real' name='Energy_intensity_by_GDP' ordinal='9' />
+            <column datatype='real' name='CO2_emission' ordinal='10' />
+            <column datatype='string' name='Region' ordinal='11' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[df3.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¤&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[df3.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[df3.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Energy_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Energy_type]</local-name>
+            <parent-name>[df3.csv]</parent-name>
+            <remote-alias>Energy_type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[df3.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Energy_consumption</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Energy_consumption]</local-name>
+            <parent-name>[df3.csv]</parent-name>
+            <remote-alias>Energy_consumption</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Energy_production</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Energy_production]</local-name>
+            <parent-name>[df3.csv]</parent-name>
+            <remote-alias>Energy_production</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GDP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GDP]</local-name>
+            <parent-name>[df3.csv]</parent-name>
+            <remote-alias>GDP</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Population]</local-name>
+            <parent-name>[df3.csv]</parent-name>
+            <remote-alias>Population</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Energy_intensity_per_capita</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Energy_intensity_per_capita]</local-name>
+            <parent-name>[df3.csv]</parent-name>
+            <remote-alias>Energy_intensity_per_capita</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Energy_intensity_by_GDP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Energy_intensity_by_GDP]</local-name>
+            <parent-name>[df3.csv]</parent-name>
+            <remote-alias>Energy_intensity_by_GDP</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO2_emission</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO2_emission]</local-name>
+            <parent-name>[df3.csv]</parent-name>
+            <remote-alias>CO2_emission</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[df3.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='CO2 emission' datatype='real' name='[CO2_emission]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Energy consumption' datatype='real' name='[Energy_consumption]' role='measure' type='quantitative' />
+      <column caption='Energy intensity by GDP' datatype='real' name='[Energy_intensity_by_GDP]' role='measure' type='quantitative' />
+      <column caption='Energy intensity per capita' datatype='real' name='[Energy_intensity_per_capita]' role='measure' type='quantitative' />
+      <column caption='Energy production' datatype='real' name='[Energy_production]' role='measure' type='quantitative' />
+      <column caption='Energy type' datatype='string' name='[Energy_type]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;coal&quot;' value='Coal' />
+          <alias key='&quot;natural_gas&quot;' value='Natural gas' />
+          <alias key='&quot;nuclear&quot;' value='Nuclear' />
+          <alias key='&quot;petroleum_n_other_liquids&quot;' value='Petroleum' />
+          <alias key='&quot;renewables_n_other&quot;' value='Renewables' />
+        </aliases>
+      </column>
+      <column datatype='real' name='[Population]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Region]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;Arab contries&quot;' value='Arab countries' />
+          <alias key='&quot;Canada, USA and territories&quot;' value='Canada + USA' />
+        </aliases>
+      </column>
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='df3.csv' datatype='table' name='[__tableau_internal_object_id__].[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]' role='measure' type='quantitative' />
+      <column-instance column='[Energy_type]' derivation='None' name='[none:Energy_type:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+      <column-instance column='[CO2_emission]' derivation='Sum' name='[sum:CO2_emission:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Population]' derivation='Sum' name='[sum:Population:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/ericaNNa/Documents/My Tableau Repository/Datasources/df3.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='02/08/2023 02:47:46 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='df3' increment-value='%null%' refresh-type='create' rows-inserted='29683' timestamp-start='2023-02-08 14:47:46.524' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>df3.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>29683</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>1</ordinal>
+              <family>df3.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>241</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Energy_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Energy_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Energy_type</remote-alias>
+              <ordinal>2</ordinal>
+              <family>df3.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>3</ordinal>
+              <family>df3.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Energy_consumption</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Energy_consumption]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Energy_consumption</remote-alias>
+              <ordinal>4</ordinal>
+              <family>df3.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>798</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Energy_production</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Energy_production]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Energy_production</remote-alias>
+              <ordinal>5</ordinal>
+              <family>df3.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>889</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GDP</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[GDP]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GDP</remote-alias>
+              <ordinal>6</ordinal>
+              <family>df3.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7013</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Population</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Population]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Population</remote-alias>
+              <ordinal>7</ordinal>
+              <family>df3.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7951</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Energy_intensity_per_capita</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Energy_intensity_per_capita]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Energy_intensity_per_capita</remote-alias>
+              <ordinal>8</ordinal>
+              <family>df3.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5986</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Energy_intensity_by_GDP</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Energy_intensity_by_GDP]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Energy_intensity_by_GDP</remote-alias>
+              <ordinal>9</ordinal>
+              <family>df3.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1981</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CO2_emission</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[CO2_emission]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CO2_emission</remote-alias>
+              <ordinal>10</ordinal>
+              <family>df3.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3553</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>11</ordinal>
+              <family>df3.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df3.csv_8FA3405494F0403A91BF165EDD05C9A5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0n3ulb40p3648b1377er81ikzali].[sum:CO2_emission:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0n3ulb40p3648b1377er81ikzali].[sum:Population:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Region:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Africa&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Eastern Europe&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Canada, USA and territories&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;World&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Oceania&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Asia&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Latin America&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Arab contries&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Western Europe&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Energy_type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;all_energy_types&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;coal&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;petroleum_n_other_liquids&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;nuclear&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;natural_gas&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;renewables_n_other&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='df3.csv' id='df3.csv_8FA3405494F0403A91BF165EDD05C9A5'>
+            <properties context=''>
+              <relation connection='textscan.1l9v41b1xarror142rrob0lud6yx' name='df3.csv' table='[df3#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Country' ordinal='1' />
+                  <column datatype='string' name='Energy_type' ordinal='2' />
+                  <column datatype='integer' name='Year' ordinal='3' />
+                  <column datatype='real' name='Energy_consumption' ordinal='4' />
+                  <column datatype='real' name='Energy_production' ordinal='5' />
+                  <column datatype='real' name='GDP' ordinal='6' />
+                  <column datatype='real' name='Population' ordinal='7' />
+                  <column datatype='real' name='Energy_intensity_per_capita' ordinal='8' />
+                  <column datatype='real' name='Energy_intensity_by_GDP' ordinal='9' />
+                  <column datatype='real' name='CO2_emission' ordinal='10' />
+                  <column datatype='string' name='Region' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
   </datasources>
   <mapsources>
     <mapsource name='Tableau' />
@@ -11098,7 +11285,7 @@
     </window>
     <window class='dashboard' maximized='true' name='Story 1'>
       <viewpoints />
-      <active id='4' />
+      <active id='-1' />
       <simple-id uuid='{7B6DD076-7F41-4945-BDF3-17BFD3ABAACA}' />
     </window>
     <window class='dashboard' name='Dashboard 11'>
