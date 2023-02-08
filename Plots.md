@@ -34,4 +34,10 @@ Storytelling:
 7) How the consumption and production of energy has increased (per country/region and per energy type), highlighting that renewable sources, that are more eco-friendly, also increased
 8) Conclusion
 
+
 +- 1 min per slide
+
+Conclusion:
+- However there is evidence that fossil fuels (coal, oil and gas) have a big impact on CO2 emissions and therefore on climate change, the consumption and production of these fuels have increased significantly in the last 30 years. 
+- This increase in energy consumption and therefore in emissions has a clear relationship with GDP growth, particularly with growth of developing countries like China or India.
+- Therefore to reduce our CO2 emissions we need to stablelize GDP growth and subsitute fossil fuels for renewable energies.
