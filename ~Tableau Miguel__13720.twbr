@@ -1948,6 +1948,42 @@
       </viewpoint>
       <simple-id uuid='{D6725E58-86E6-488F-A38C-6779C3637A84}' />
     </window>
+    <window class='worksheet' maximized='true' name='CO2 emissions/Country'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='37'>
+            <card type='columns' />
+          </strip>
+          <strip size='37'>
+            <card type='rows' />
+          </strip>
+          <strip size='37'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='217'>
+            <card pane-specification-id='0' param='[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[none:Country:nk]' type='color' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>1994</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{0353DF80-0414-48A7-A5FE-08B6F8068261}' />
+    </window>
     <window class='worksheet' name='GDP/Country'>
       <cards>
         <edge name='left'>
@@ -1983,42 +2019,6 @@
         </current-page>
       </viewpoint>
       <simple-id uuid='{6F3C1735-6DD1-459B-815B-EA3526CB9C49}' />
-    </window>
-    <window class='worksheet' maximized='true' name='CO2 emissions/Country'>
-      <cards>
-        <edge name='left'>
-          <strip size='200'>
-            <card type='pages' />
-            <card type='filters' />
-            <card type='marks' />
-          </strip>
-        </edge>
-        <edge name='top'>
-          <strip size='37'>
-            <card type='columns' />
-          </strip>
-          <strip size='37'>
-            <card type='rows' />
-          </strip>
-          <strip size='37'>
-            <card type='title' />
-          </strip>
-        </edge>
-        <edge name='right'>
-          <strip size='217'>
-            <card pane-specification-id='0' param='[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[none:Country:nk]' type='color' />
-            <card type='currpage' />
-          </strip>
-        </edge>
-      </cards>
-      <viewpoint>
-        <current-page>
-          <multibucket>
-            <bucket>2019</bucket>
-          </multibucket>
-        </current-page>
-      </viewpoint>
-      <simple-id uuid='{0353DF80-0414-48A7-A5FE-08B6F8068261}' />
     </window>
     <window class='worksheet' name='Production per region'>
       <cards>
