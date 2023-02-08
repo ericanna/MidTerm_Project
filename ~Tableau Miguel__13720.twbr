@@ -1811,10 +1811,10 @@
       <style />
       <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
       <zones>
-        <zone h='54875' id='3' name='CO2 emissions/Regions' w='82200' x='900' y='1000' />
+        <zone h='49875' id='3' name='CO2 emissions/Regions' w='81700' x='900' y='1000' />
         <zone h='23750' id='4' name='CO2 emissions/Regions' pane-specification-id='0' param='[federated.0n2qrqi0xm4lmh10hysyr0wj1hwx].[none:Region:nk]' type-v2='color' w='14000' x='83600' y='5875' />
         <zone count='1' h='13875' id='5' name='CO2 emissions/Regions' name1='GDP/Region' synchronized='1' type-v2='currpage' w='16000' x='84500' y='42125' />
-        <zone h='50625' id='6' name='GDP/Region' w='83600' x='500' y='54875' />
+        <zone h='54375' id='6' name='GDP/Region' w='82200' x='1200' y='48750' />
       </zones>
       <devicelayouts>
         <devicelayout auto-generated='true' name='Phone'>
@@ -2231,7 +2231,7 @@
         <viewpoint name='CO2 emissions/Regions'>
           <current-page>
             <multibucket>
-              <bucket>2009</bucket>
+              <bucket>1999</bucket>
             </multibucket>
           </current-page>
           <zoom type='entire-view' />
@@ -2239,7 +2239,7 @@
         <viewpoint name='GDP/Region'>
           <current-page>
             <multibucket>
-              <bucket>2009</bucket>
+              <bucket>1999</bucket>
             </multibucket>
           </current-page>
           <zoom type='entire-view' />
