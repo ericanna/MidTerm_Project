@@ -9554,8 +9554,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='78' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='77' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='82' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='81' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
                 <zone forceUpdate='true' h='17625' id='5' type-v2='text' w='39700' x='5100' y='3375'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Medium' fontsize='14'>CO2 is Earth’s most important greenhouse gas: a gas that absorbs and radiates heat. </run>
@@ -9615,8 +9615,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='42' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='41' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='46' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='45' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
                 <zone fixed-size='280' h='51500' id='3' is-fixed='true' name='CO2 emissions/Regions (3)' w='97300' x='900' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -9679,8 +9679,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='16' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='21' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='20' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
                 <zone forceUpdate='true' h='13000' id='6' type-v2='text' w='44300' x='2800' y='1625'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Medium' fontsize='14'>Energy intensity is a measure of the energy inefficiency of an economy. How much energy is needed to produce 1 unit of GDP.</run>
@@ -9777,8 +9777,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='13' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='12' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='16' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
                 <zone forceUpdate='true' h='14500' id='7' type-v2='text' w='91000' x='3200' y='2125'>
                   <formatted-text>
                     <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Tableau Semibold' fontsize='24' underline='true'>CONCLUSION</run>
@@ -9872,8 +9872,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='76' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='75' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='80' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='79' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
                 <zone forceUpdate='true' h='13750' id='5' type-v2='text' w='45800' x='4100' y='5500'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Medium' fontsize='14'>Gross domestic product (GDP) is a monetary measure of the market value of all the final goods and services produced and sold in a specific time period by countries. </run>
@@ -9972,8 +9972,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='93' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='92' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='97' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='96' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
                 <zone forceUpdate='true' h='9250' id='3' type-v2='text' w='35000' x='2400' y='7500'>
                   <formatted-text>
                     <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Tableau Medium' fontsize='24' underline='true'>About the dataset</run>
@@ -10066,8 +10066,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='58' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='57' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='62' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='61' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
                 <zone forceUpdate='true' h='13000' id='5' type-v2='text' w='51400' x='44900' y='1750'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Medium' fontsize='14'>Although production of  renewable energy sources grew in the last decades, we can also see an important growth of CO2 emission sources such as petroleum and coal. </run>
@@ -10132,8 +10132,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='56' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='55' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='60' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='59' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
                 <zone forceUpdate='true' h='11000' id='6' type-v2='text' w='45600' x='2700' y='4625'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Medium' fontsize='15'>Despite the problems caused by the increasing amount of CO2 in our atmosphere, total CO2 emissions keep growing. </run>
@@ -10205,8 +10205,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='39' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='38' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='43' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='42' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
                 <zone forceUpdate='true' h='8625' id='5' type-v2='text' w='37800' x='54200' y='4875'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Medium' fontsize='14'>In some years, CO2 emissions grew more than the world&apos;s population.</run>
@@ -10267,8 +10267,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='750' minheight='750' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='40' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='39' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='44' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='43' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
                 <zone h='9750' id='6' type-v2='text' w='48700' x='5800' y='6625'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Medium' fontsize='14'>Both energy production and energy consumption have grown in the last decades.</run>
@@ -10337,8 +10337,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='24' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='23' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='28' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='27' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
                 <zone forceUpdate='true' h='16750' id='6' type-v2='text' w='56500' x='2500' y='2750'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Medium' fontsize='14'>Emissions from developed countries seem to have remained more stable, while emissions from developing countries, such as China and India, have increased considerably while they have been developing.</run>
@@ -11143,7 +11143,7 @@
           </selection-collection>
         </viewpoint>
       </viewpoints>
-      <active id='3' />
+      <active id='-1' />
       <simple-id uuid='{83F5B11C-43A9-49C7-83DB-856D3F5ADD07}' />
     </window>
     <window class='dashboard' name='Dashboard 2'>
@@ -11155,7 +11155,7 @@
           </highlight>
         </viewpoint>
       </viewpoints>
-      <active id='3' />
+      <active id='-1' />
       <simple-id uuid='{166F8FC7-6FA5-4B64-807C-DFC984B28891}' />
     </window>
     <window class='dashboard' name='Dashboard 3'>
@@ -11177,7 +11177,7 @@
           </highlight>
         </viewpoint>
       </viewpoints>
-      <active id='20' />
+      <active id='-1' />
       <simple-id uuid='{D9AF902A-5CE4-4444-A7CD-73E17A72B9E4}' />
     </window>
     <window class='dashboard' name='Dashboard 5'>
@@ -11194,7 +11194,7 @@
           </highlight>
         </viewpoint>
       </viewpoints>
-      <active id='16' />
+      <active id='-1' />
       <simple-id uuid='{38739750-C889-43FF-B614-CC8860E7583F}' />
     </window>
     <window class='dashboard' name='Dashboard 6'>
@@ -11221,7 +11221,7 @@
           </highlight>
         </viewpoint>
       </viewpoints>
-      <active id='5' />
+      <active id='-1' />
       <simple-id uuid='{A715C6FA-23B2-40B0-A4AF-6D01C924578D}' />
     </window>
     <window class='dashboard' name='Dashboard 1 (2)'>
@@ -11243,7 +11243,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='6' />
+      <active id='-1' />
       <simple-id uuid='{AD75F890-D68D-4B5E-AEED-536DFDF0E6E5}' />
     </window>
     <window class='dashboard' name='Dashboard 9'>
@@ -11257,7 +11257,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='6' />
+      <active id='-1' />
       <simple-id uuid='{00CBEE35-8E92-43C2-9462-8C4CB235AE6D}' />
     </window>
     <window class='dashboard' name='Dashboard 10'>
